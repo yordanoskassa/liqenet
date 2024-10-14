@@ -10,7 +10,7 @@ app.use(express.json());
 app.use(cors());
 
 // MongoDB connection
-mongoose.connect('mongodb://127.0.0.1:27017/form', {
+mongoose.connect('mongodb+srv://kassay:BdyQyJWbTVH3l6K1@cluster1.gep2t.mongodb.net/?retryWrites=true&w=majority&appName=Cluster1', {
   useNewUrlParser: true,
   useUnifiedTopology: true
 })
@@ -41,6 +41,6 @@ app.post('/form', async (req, res) => {
 });
 
 // Start the server
-app.listen(3001, () => {
-  console.log('Server is listening on http://127.0.0.1:3001');
-});
+app.listen(80, '0.0.0.0', () => {
+    console.log('Server is listening on port 80');
+  });
