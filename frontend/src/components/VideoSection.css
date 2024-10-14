@@ -1,0 +1,80 @@
+/* VideoSection.css */
+
+.video-section {
+    background-color: #f8f9fa;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .video-title {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #333;
+    position: relative;
+  }
+  
+  .video-title::after {
+    content: "";
+    width: 80px;
+    height: 4px;
+    background: #007bff;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
+  }
+  
+  .video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .video-card {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    max-width: 320px; /* Ensure TikTok-size appearance */
+  }
+  
+  .video-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .video-element {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  .video-card:hover .video-element {
+    transform: scale(1.05); /* Slight zoom-in effect */
+  }
+  
+  .video-info {
+    padding: 10px 0;
+  }
+  
+  .video-info h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .video-info p {
+    color: #777;
+    font-size: 0.9rem;
+  }
+  @media (max-width: 768px) {
+    .video-section {
+        display: none;
+    }
+  }

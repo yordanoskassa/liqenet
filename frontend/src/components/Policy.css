@@ -1,0 +1,8 @@
+.form-body {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #74ebd5, #acb6e5);
+    padding: 2rem;
+  }
