@@ -45,7 +45,7 @@ const ContactSection = () => {
             />
           </div>
 
-          <div className="contact-form-group">
+          <div className="form-group">
             <label htmlFor="email">Email</label>
             <input
               type="email"

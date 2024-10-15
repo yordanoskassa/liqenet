@@ -3,8 +3,15 @@ import React from "react";
 import "./Footer.css"; // Import the CSS file
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebookF, faTwitter, faInstagram, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
+import { useNavigate } from "react-router-dom"; // Import useNavigate for navigation
 
 const Footer = () => {
+  const navigate = useNavigate(); // Initialize navigation
+
+  const handleGetStarted = () => {
+    navigate("/form"); // Navigate to the form page
+  };
+
   return (
     <footer className="footer">
       <div className="footer-container">
@@ -27,10 +34,10 @@ const Footer = () => {
         {/* Footer Links */}
         <div className="footer-links">
           <a href="#">About Us</a>
-          <a href="#terms">Terms & Conditions</a>
-          <a href="#policy">Privacy Policy</a>
+          <a href="/terms">Terms and Conditions</a>
+          <a href="/policy">Privacy Policy</a>
           <a href="#faq">FAQ</a>
-          <button className="mobile sexy-button">Get Started</button>
+          <button className="mobile sexy-button" onClick={handleGetStarted}>Get Started</button>
         </div>
 
         {/* Contact Information */}

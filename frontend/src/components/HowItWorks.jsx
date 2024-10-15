@@ -4,6 +4,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUserPlus, faChalkboardTeacher, faLaptopCode } from "@fortawesome/free-solid-svg-icons";
 import "./HowItWorks.css"; // Import the CSS file
 
+import { useNavigate } from "react-router-dom"; // Import useNavigate for navigation
+
+
+
 const steps = [
   {
     icon: faUserPlus,
@@ -23,6 +27,12 @@ const steps = [
 ];
 
 const HowItWorks = () => {
+  const navigate = useNavigate(); // Initialize navigation
+
+  const handleGetStarted = () => {
+    navigate("/form"); // Navigate to the form page
+  };
+
   return (
     <section className="how-it-works-section" id="how-it-works">
       <div className="container">
@@ -39,7 +49,7 @@ const HowItWorks = () => {
               <p className="step-description">{step.description}</p>
             </div>
           ))}
-          <button className="mobile sexy-button">Get Started</button>
+          <button className="mobile sexy-button" onClick={handleGetStarted}>Get Started</button>
         </div>
       </div>
     </section>

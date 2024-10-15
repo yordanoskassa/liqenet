@@ -694,7 +694,7 @@ video {
 
 body {
   font-family: Amhara, Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f8f9fc;
+  background: linear-gradient(to right, #74ebd5, #acb6e5);
   color: #333;
   margin: 0;
   padding: 0
@@ -761,6 +761,7 @@ body {
 }
 
 .sexy-button {
+  font-family: Trebuchet MS;
   padding: .8rem 2.5rem;
   background-color: #00bcd4;
   color: #fff;

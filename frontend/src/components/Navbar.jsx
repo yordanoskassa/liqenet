@@ -19,9 +19,11 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-brand">
-        <span>LIQENET</span>
-        <span> </span>
-        <span className="grey">ሊቀነት</span>
+        <a href="/" style={{ textDecoration: 'none', color: 'inherit' }}>
+          <span>LIQENET</span>
+          <span> </span>
+          <span className="grey">ሊቀነት</span>
+        </a>
       </div>
 
       {/* Hamburger icon for mobile */}

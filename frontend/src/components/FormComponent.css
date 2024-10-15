@@ -32,20 +32,23 @@
 
 /* Form title styling */
 .form-title {
+  font-family: Trebuchet MS ; 
   text-align: center;
   margin-bottom: 25px;
   font-size: 28px;
   color: #333;
   font-weight: 600;
-  font-family: Tahoma, Geneva, Verdana, sans-serif;
 }
+
 
 /* Form group styling */
 .form-group {
+  
   margin-bottom: 20px;
 }
 
 .form-group label {
+  
   font-size: 14px;
   font-weight: 500;
   color: #555;
@@ -55,14 +58,15 @@
 
 .form-group input,
 .form-group select {
-  width: 100%;
+  font-family: Trebuchet MS;
+  width: 3070px;
   padding: 15px;
   border: 1px solid #ddd;
   border-radius: 10px;
   font-size: 16px;
   background-color: #f7f7f7;
   transition: all 0.3s ease;
-  max-width: 95%;
+  max-width: 90%;
 }
 
 .form-group input:focus,
@@ -113,6 +117,7 @@
   }
 
   .form-title {
+    font-family: Trebuchet MS;
     font-size: 24px;
   }
 

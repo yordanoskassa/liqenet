@@ -61,12 +61,13 @@
 
 .contact-form-group input,
 .contact-form-group textarea {
-  width: 100%;
+  width: 800px;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 1rem;
   transition: border 0.3s;
+  max-width: 95%;
 }
 
 .contact-form-group input:focus,

@@ -10,7 +10,10 @@ import Footer from "./components/Footer";
 import ContactSection from "./components/ContactSection";
 import VideoSection from "./components/VideoSection";
 import FormComponent from "./components/FormComponent";
+import Privacy from "./components/Policy";
+import Terms from "./components/Terms";
 import "./index.css"; // Import the CSS file
+import Policy from "./components/Policy";
 
 const HomePage = () => {
   return (
@@ -34,6 +37,8 @@ const App = () => {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/form" element={<FormComponent />} />
+        <Route path="/policy" element={<Policy />} />
+        <Route path="/terms" element={<Terms />} />
       </Routes>
     </Router>
   );
