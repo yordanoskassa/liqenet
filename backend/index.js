@@ -41,6 +41,6 @@ app.post('/form', async (req, res) => {
 });
 
 // Start the server
-app.listen(443, '0.0.0.0', () => {
-    console.log('Server is listening on port 443');
+app.listen(80, '0.0.0.0', () => {
+    console.log('Server is listening on port 80');
   });
