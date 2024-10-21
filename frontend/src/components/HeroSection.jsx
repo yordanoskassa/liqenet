@@ -6,7 +6,7 @@ const HeroSection = () => {
   const navigate = useNavigate(); // Initialize navigation
 
   const handleGetStarted = () => {
-    navigate("/form"); // Navigate to the form page
+    navigate("/get-started"); // Navigate to the form page
   };
 
   return (

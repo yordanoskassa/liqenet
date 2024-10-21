@@ -7,7 +7,13 @@ const app = express();
 
 // Middleware
 app.use(express.json());
-app.use(cors());
+app.use(cors(
+  {
+    origin: 'https://www.liqenet.kassa.dev',
+    methods: ['GET', 'POST'],
+    credentials: true
+  }
+));
 
 // MongoDB connection
 mongoose.connect('mongodb+srv://kassay:BdyQyJWbTVH3l6K1@cluster1.gep2t.mongodb.net/?retryWrites=true&w=majority&appName=Cluster1', {
@@ -41,6 +47,6 @@ app.post('/form', async (req, res) => {
 });
 
 // Start the server
-app.listen(443, '0.0.0.0', () => {
-    console.log('Server is listening on port 443');
+app.listen(8080, '0.0.0.0', () => {
+    console.log('Server is listening on port 8080');
   });
