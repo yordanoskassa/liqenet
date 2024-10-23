@@ -33,7 +33,7 @@ const FormComponent = () => {
 
     const { FirstName, LastName, Age, Level } = formData;
 
-    axios.post('https://liqenet.kassa.dev/form', { FirstName, LastName, Age, Level })
+    axios.post('https://liqenet.com/form', { FirstName, LastName, Age, Level })
       .then(result => {
         console.log(result);
         setFormSubmitted(true); // Set formSubmitted to true on successful submission
